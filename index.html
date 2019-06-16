@@ -3,177 +3,180 @@
 <head>
 <meta charset="utf-8">
 <title>汇恩环境</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/idangerous.swiper.css">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
-<script type="text/javascript" src="js/draw.js"></script>
-<style type="text/css">
-	*{
-		padding:0;
-		margin: 0;
-	}
-	.swiper-wrapper img{
-			display: block;
-			width:100%;
-		}
-
-		.slider{
-			clear:both;
-			padding:0 0 5px 0;
-			position: relative;
-		}
-
-		.pagination {
-		  position: absolute;
-		  left: 0;
-		  text-align: center;
-		  bottom:5px;
-		  width: 100%;
-		  z-index: 10;
-		}
-
-		.swiper-container{
-			z-index: 9;
-		}
-
-		.swiper-pagination-switch {
-		  display: inline-block;
-		  width: 50px;
-		  height: 10px;
-		  background: #9ccfae;
-		  margin: 0 3px;
-		  
-		}
-		.swiper-active-switch {
-		  background: #7fb941;
-		}
-	#D3{width: 100%}
-	#wrap{width:1145px;overflow:hidden;padding:25px 0px 100px 0px;margin: 0 auto;}
-	.item1 img{vertical-align:top;}
-	.item1 li{position:relative;float:left;width:270px;height:220px;overflow:hidden;cursor:pointer;}
-	.item1 div{position:absolute;left:0;top:165px;width:100%;height:60px;text-align:center;background:url(img/logo.png) no-repeat;color:#FFF;overflow:hidden;}
-	.item1 p{display:none;margin:20px auto 0;width:180px;line-height:20px;text-align:left;text-indent:2em;font-size:12px;}
-	.item1 span{font-family: 微软雅黑;font-size: 14px}
-
-</style>
+<!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+<div class="container-fluid">
+	<!-- Static navbar -->
+<nav class="navbar navbar-header">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">
+			<img src="img/logo.png" alt="汇恩" >
+		</a>
+	</div>
 
-  <div id="d4">
-  	<img src="img/logo.png" alt="丢失图片" >
-  </div>
-<div id="D2">
-<div id="menu-wrap">
-	<ul id="menu">
-		<li><a href="index.html">首 页</a></li>
-		<li> <a href="gywm.html" >企业简介</a></li>
-		<li> <a href="domain.html" > 领域案例</a></li>
-		<li> <a href="#lianxi" >联系我们</a></li>		
+	<ul class="nav nav-pills">
+	<li class="nav-item"><a class="nav-link active" href="index.html">首 页</a></li>
+	<li class="nav-item"> <a class="nav-link" href="tdjs.html" >企业简介</a></li>
+	<li class="nav-item"> <a class="nav-link" href="domain.html" > 领域案例</a></li>
+	<li class="nav-item"> <a class="nav-link" href="lianxi.html" >联系我们</a></li>		
 	</ul>
-</div>
-</div>
-<!-- banner轮播图 -->
-<div class="slider">
-		
-			<div class="swiper-container">
-		       <div class="swiper-wrapper">
-		         <div class="swiper-slide"><a href="xmgc.html" ><img src="img/banner1.jpg"></a></div>
-		         <div class="swiper-slide"><a href="#" ><img src="img/banner2.jpg"></a></div>
-		         <div class="swiper-slide"><a href="#" ><img src="img/banner3.jpg"></a></div>
-		         <div class="swiper-slide"><a href="xqhz.html" ><img src="img/banner4.jpg"></a></div>
-		       </div>
-		    </div>
-		    <div class="pagination"></div>    <!-- 这行是轮播图底下的白点 -->
 	</div>
-<div id="G1">
-<div id="d5">
-	<img src="img/02.png"><span>&nbsp;&nbsp;&nbsp;&nbsp;关 于 汇 恩&nbsp;&nbsp;&nbsp;&nbsp;</span><img src="img/02.png">
-</div>
-<div id="d6">
-	<span> About Hui En </span>
-</div>
-</div>
-<div id="D3">
-<div id="wrap">
-	<ul class="item1">
-    	<li>
-			<img src="img/001.png" width="270" height="220" />
-			<div>
-                <br>
-            	<span>农业沼气工程</span>
-	            <p>农业沼气工程</p>
-            </div>
-		</li>
-        <li style="margin:0px 20px;">
-			<img src="img/002.png" width="270" height="220" />
-			<div>
-                <br>
-            	<span>土壤</span>
-	            <p>土壤</p>
-            </div>
-		</li>
-        <li style="margin-right:20px;">
-			<img src="img/003.png" width="270" height="220" />
-			<div>
-                <br>
-            	<span>废水</span>
-	            <p>含油，农村污水，养殖，印染</p>
-            </div>
-		</li>
-        <li>
-			<img src="img/004.png" width="270" height="220" />
-			<div>
-                <br>
-            	<span>废水</span>
-	            <p>制药</p>
-            </div>
-		</li>
-    </ul>
-</div>
-</div>
+</nav>
+
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+	<!-- 指示符 -->
+	<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+		<li data-target="#demo" data-slide-to="3"></li>
+	</ul>
 	
-</div>
-<a name="lianxi"></a>
-<div id="K2">
-<div id="K1">
-	<div id="k1"><img src="img/03.png"></div>
-	<div id="k2">
-		<ul style="padding:44px 44px 30px 0px">
-			<li ><a href="index.html" >网站首页</a></li>
-			<li style="margin: 0px 30px; color: #fff">|</li>
-			<li ><a href="xmgc.html" >项目工程</a></li>
-			<li style="margin: 0px 30px; color: #fff">|</li>
-			<li ><a href="jygc.html" >教育工程</a></li>
-			<li style="margin: 0px 30px; color: #fff">|</li>
-			<li ><a href="xqhz.html" >校企合作</a></li>
-		</ul>
-		<br>
-		<a href="gywm.html" ><img src="img/04.png"></a>
+	<!-- 轮播图片 -->
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+		<img src="img/banner1.jpg">
+		</div>
+		<div class="carousel-item">
+		<img src="img/banner2.jpg">
+		</div>
+		<div class="carousel-item">
+		<img src="img/banner3.jpg">
+		</div>
+		<div class="carousel-item">
+		<img src="img/banner4.jpg">
+		</div>
 	</div>
-	<div class ="k3"><img src="img/微信公众号.png"></div>
-	<div class ="k3"><img src="img/微信咨询.png"></div>
+	
+	<!-- 左右切换按钮 -->
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+	</div>
+	<!-- 数据案例 -->
+	<hr style="filter: progid:dximagetransform.microsoft.glow(color="#987cb9",strength=10)" width="80%" color="#987cb9" size=1>
 </div>
-</div>
-<div id="K3">
-	<span> ©2019 哈尔滨汇恩环境科技有限公司  All Rights Reserved</span>
-</div>
+<div id="accordion">
+		<div class="card">
+		  <div class="card-header">
+			<a class="card-link" data-toggle="collapse" href="#collapseOne">
+			 业务:废水处理
+			</a>
+		  </div>
+		  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+			<div class="card-body">
+				<div class="card-group">
+					<div class="card">
+					  <img class="card-img-top" src="img/Water/含油1.jpg" alt="Card image cap">
+					  <div class="card-body">
+						<h5 class="card-title">含油废水</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					  </div>
+					</div>
+					<div class="card">
+					  <img class="card-img-top" src="img/Water/农村1.jpg" alt="Card image cap">
+					  <div class="card-body">
+						<h5 class="card-title">农村废水</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					  </div>
+					</div>
+					<div class="card">
+					  <img class="card-img-top" src="img/Water/养殖1.jpg" alt="Card image cap">
+					  <div class="card-body">
+						<h5 class="card-title">养殖废水</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					  </div>
+					</div>
+	
+					<div class="card">
+						<img class="card-img-top" src="img/Water/医药.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <h5 class="card-title">印染废水</h5>
+						  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					  </div>
+	
+					  <div class="card">
+						<img class="card-img-top" src="img/Water/养殖1.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <h5 class="card-title">制药废水</h5>
+						  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					  </div>
+				  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="card">
+		  <div class="card-header">
+			<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+			业务:固废处理
+		  </a>
+		  </div>
+		  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+			<div class="card-body">
+					<div class="card-group">
+							<div class="card">
+							  <img class="card-img-top" src="img/Water/IMG_1086.jpg" alt="Card image cap">
+							  <div class="card-body">
+								<h5 class="card-title">农业沼气工程</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							  </div>
+							</div>
+							<div class="card">
+							  <img class="card-img-top" src="img/Water/土壤1.jpg" alt="Card image cap">
+							  <div class="card-body">
+								<h5 class="card-title">土壤</h5>
+								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							  </div>
+							</div>
+							<div class="card">
+							  <img class="card-img-top" src="img/solid/固废2.jpg" alt="Card image cap">
+							  <div class="card-body">
+								<h5 class="card-title">固废处理</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							  </div>
+							</div>
+						  </div>
+			</div>
+		  </div>
+		</div>	
+	  </div>
 
-
-
-<script type="text/javascript">
-		var mySwiper = new Swiper('.swiper-container',{
-	     pagination: '.pagination',
-	     loop:true,
-	     grabCursor: true,
-	     paginationClickable: true,
-	     autoplay:3000
-		});
-
-		var imgHeight = $(window).width()*5/14;
-		$('.swiper-container').css('height',imgHeight); 
-	</script>
 </body>
+<footer>
+	<p>	
+	    <a href="index.html">首 页</a> |
+	    <a href="tdjs.html">企业简介</a> |
+	    <a href="domain.html">领域案例</a> |
+	    <a href="lianxi.html">联系我们</a> |
+	</p>
+	<p>Copyright © 2019 哈尔滨汇恩环境科技有限公司 All Rights Reserved</p>
+	<address>哈尔滨市南岗区银行街2号1号楼1层E09-24号</address>
+</footer>
 </html>

@@ -3,33 +3,272 @@
 <head>
 <meta charset="utf-8">
 <title>汇恩环境</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<!-- 导航-->
-
+	
 <div class="container-fluid">
-		<!-- Static navbar -->
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" alt="汇恩" >
-			</a>
-		</div>
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-			<li><a href="index.html">首 页</a></li>
-			<li> <a href="gywm.html" >企业简介</a></li>
-			<li class="active"> <a href="domain.html" > 领域案例</a></li>
-			<li> <a href="lianxi.html" >联系我们</a></li>		
-			</ul>
-		</div>
-		</div>
-	</nav>
-</div> 
+	<!-- Static navbar -->
+<nav class="navbar navbar-header">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">
+			<img src="img/logo.png" alt="汇恩" >
+		</a>
+	</div>
 
+	<ul class="nav nav-pills">
+	<li class="nav-item"><a class="nav-link" href="index.html">首 页</a></li>
+	<li class="nav-item"> <a class="nav-link" href="tdjs.html" >企业简介</a></li>
+	<li class="nav-item"> <a class="nav-link active" href="domain.html" > 领域案例</a></li>
+	<li class="nav-item"> <a class="nav-link" href="lianxi.html" >联系我们</a></li>		
+	</ul>
+	</div>
+</nav>
+
+<div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+			长春市双阳河黑臭河道整治工程 
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+			<div class="card-group">
+				<div class="card">
+				  <img class="card-img-top" src="img/Domain/Domain1/01.jpg" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">项目概况</h5>
+					<p class="card-text">双阳河水系是长春市治理黑臭水体的重点工程，主要是在提高整体防洪排涝建设标准及已有建设工程上，以尊重自然水系为原则，以恢复河道流动为重点，保障水生态环境安全。由我公司参与设计和建设，总投资3.1亿元。</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  </div>
+				</div>
+				<div class="card">
+				  <img class="card-img-top" src="img/Domain/Domain1/02.jpg" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">处理前</h5>
+					<p class="card-text">处理前废水直流，污染巨大，河边草木因为废水枯萎</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  </div>
+				</div>
+				<div class="card">
+				  <img class="card-img-top" src="img/Domain/Domain1/03.jpg" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">处理后</h5>
+					<p class="card-text">经过治理，恢复了生态环境，清澈见底，碧波荡漾</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  </div>
+				</div>
+			  </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+			广西壮族自治区南宁市西乡塘区生态塘工程
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+				<div class="card-group">
+						<div class="card">
+						  <img class="card-img-top" src="img/Domain/Domain2/01.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">项目介绍</h5>
+							<p class="card-text">西乡塘区生态塘工程主要是在原有受污染水体之上进行生态化构建的工程，恢复了该水体的自净功能，生态护坡截留了部分外源污染的进入，可以长期保证水质的稳定，景观效果非常好。</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						  </div>
+						</div>
+						<div class="card">
+						  <img class="card-img-top" src="img/Domain/Domain2/01.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">处理前</h5>
+							<p class="card-text">水质受到污染，环境破坏，植物难以生长</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						  </div>
+						</div>
+						<div class="card">
+						  <img class="card-img-top" src="img/Domain/Domain2/02.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">处理后</h5>
+							<p class="card-text">长期保证水质的稳定，景观效果非常好。</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						  </div>
+						</div>
+					  </div>
+        </div>
+      </div>
+	</div>
+	<!-- 重金属污染-->
+    <div class="card">
+		<div class="card-header">
+		<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+		重金属污染治理
+		</a>
+		</div>
+		<div class="card">
+		<div id="collapseThree" class="collapse" data-parent="#accordion">
+		<div class="card-body">
+			<div class="card-body">
+					<div class="card-group">
+							<div class="card">
+							  <img class="card-img-top" src="img/Domain/Domain3/01.jpg" alt="Card image cap">
+							  <div class="card-body">
+								<h5 class="card-title">铅锌矿污染农田土壤</h5>
+								<p class="card-text">对吉林省很多的大型冶炼企业的周围土壤经监测，铅含量超过国家《土壤环境质量标准》Ⅱ类标准</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							  </div>
+							</div>
+							<div class="card">
+							  <img class="card-img-top" src="img/Domain/Domain3/02.jpg" alt="Card image cap">
+							  <div class="card-body">
+								<h5 class="card-title">土壤处理后</h5>
+								<p class="card-text">我公司利用生物或植物的生命代谢活动，将土壤环境中的危害性污染物降解成二氧化碳和水或其他无公害物质的工程技术。</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							  </div>
+							</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<!--污泥堆肥-->
+    <div class="card">
+			<div class="card-header">
+			<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+			污泥堆肥
+			</a>
+			</div>
+			<div class="card">
+			<div id="collapseFour" class="collapse" data-parent="#accordion">
+			<div class="card-body">
+				<div class="card-body">
+						<div class="card-group">
+								<div class="card">
+								  <img class="card-img-top" src="img/Domain/Domain4/01.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">污泥堆肥</h5>
+									<p class="card-text">济南污泥项目采用德国先进混料技术改变微观结构增加透气性与深度接种。实现理想的快速堆肥：</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								  </div>
+								</div>
+								<div class="card">
+								  <img class="card-img-top" src="img/Domain/Domain4/02.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">方案</h5>
+									<p class="card-text"> 
+										    1.物料具备透气性，微生物微观均匀分布于物料中。<br>
+											2.迅速升温，迅速蒸发水分，脱水同时使物料微孔增加、物料比表面积进步增加进入良性循环。<br>
+											3.物料静置，柔和供风，防止半反应产物外溢。<br>
+								    </p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								  </div>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	<!--厨余垃圾堆肥-->
+    <div class="card">
+			<div class="card-header">
+			<a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+					厨余垃圾堆肥
+			</a>
+			</div>
+			<div class="card">
+			<div id="collapseFive" class="collapse" data-parent="#accordion">
+			<div class="card-body">
+				<div class="card-body">
+						<div class="card-group">
+								<div class="card">
+								  <img class="card-img-top" src="img/Domain/Domain5/01.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">厨余垃圾堆肥</h5>
+									<p class="card-text">在中国，大约56%的城市固体废弃物为厨余垃圾。厨余垃圾有机成分高、湿度大，如果直接进行焚烧或者填埋处理都容易造成环境安全隐患，并且厨余垃圾容易腐烂，造成恶臭气体排放、病原体繁殖、蚊虫滋生等环境影响。我们从广东厨余垃圾项目总结出三条经验：</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								  </div>
+								</div>
+								<div class="card">
+								  <img class="card-img-top" src="img/Domain/Domain5/02.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">方案</h5>
+									<p class="card-text"> 
+											1）技术层次：堆肥原料易得，操作简单，能实现良好发酵且发酵过程不带来对环境的破坏，成熟肥无害且具有一定肥效。<br>
+											2）经济层次：成本较低，社区或小区能够负担，具有一定的经济可行性。<br>
+											3）社会层次：社区和小区管委会有意愿自我管理堆肥，小区居民能主动参与并坚持垃圾源头分类，且对社区堆肥具有较高的接受度。<br>											
+								    </p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								  </div>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	<!-- 农业废弃物沼气工程案例 -->
+    <div class="card">
+			<div class="card-header">
+			<a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+					农业废弃物沼气工程案例
+			</a>
+			</div>
+			<div class="card">
+			<div id="collapseSix" class="collapse" data-parent="#accordion">
+			<div class="card-body">
+				<div class="card-body">
+						<div class="card-group">
+								<div class="card">
+								  <img class="card-img-top" src="img/Domain/Domain6/01.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">黑龙江省海林农场一期</h5>
+									<p class="card-text">黑龙江省海林农场一期建设采用是一体式厌氧发酵产沼气工艺，该工艺启动初期采用单一牛粪作为发酵底物，序批式进行中温发酵，内置搅拌系统间歇式启动。季节性产气差别较大，冬季产气效能低。</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								  </div>
+								</div>
+								<div class="card">
+								  <img class="card-img-top" src="img/Domain/Domain6/02.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">黑龙江省海林农场二期</h5>
+									<p class="card-text"> 
+											二期沼气工程采用新型专利技术—两段式厌氧共发酵工艺，地埋式保温，多底物共发酵技术调整。冬季产气效能大大提升，未受到浮渣冲击，系统运行较为稳定。										
+								    </p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								  </div>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	<!-- -->
+
+</div>
 </body>
+<footer>
+	<p>	
+	    <a href="index.html">首 页</a> |
+	    <a href="tdjs.html">企业简介</a> |
+	    <a href="domain.html">领域案例</a> |
+	    <a href="lianxi.html">联系我们</a> |
+	</p>
+	<p>Copyright © 2019 哈尔滨汇恩环境科技有限公司 All Rights Reserved</p>
+	<address>哈尔滨市南岗区银行街2号1号楼1层E09-24号</address>
+</footer>
 </html>
